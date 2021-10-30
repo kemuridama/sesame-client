@@ -2,7 +2,8 @@
   "name": "@kemuridama/sesame-client",
   "version": "0.0.1",
   "description": "SESAME (OS2) client for Node.js and CLI tool",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "files": ["dist/"],
   "bin": {
     "sesame-cli": "bin/sesame-cli"
   },

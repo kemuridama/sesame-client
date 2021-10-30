@@ -1,6 +1,6 @@
 {
   "name": "@kemuridama/sesame-client",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "SESAME (OS2) client for Node.js and CLI tool",
   "main": "dist/index.js",
   "files": ["dist/"],

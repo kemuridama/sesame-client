@@ -1,4 +1,4 @@
-import { Type } from "./constants";
+import { Status, Type } from "./constants";
 export interface GetHistoryResponse {
     recordID: number;
     type: number;
@@ -9,7 +9,7 @@ export interface GetStatusResponse {
     batteryPercentage: number;
     batteryVoltage: number;
     position: number;
-    CHSesame2Status: string;
+    CHSesame2Status: Status;
     timestamp: number;
     wm2State: boolean;
 }

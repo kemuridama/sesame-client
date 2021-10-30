@@ -23,3 +23,9 @@ export declare const Types: {
     readonly BLE_ADV_PARAMETER_UPDATED: 13;
 };
 export declare type Type = typeof Types[keyof typeof Types];
+export declare const Statuses: {
+    readonly LOCKED: "locked";
+    readonly UNLOCKED: "unlocked";
+    readonly MOVED: "moved";
+};
+export declare type Status = typeof Statuses[keyof typeof Statuses];

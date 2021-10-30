@@ -31,3 +31,11 @@ export const Types = {
 } as const;
 
 export type Type = typeof Types[keyof typeof Types];
+
+export const Statuses = {
+  LOCKED: "locked",
+  UNLOCKED: "unlocked",
+  MOVED: "moved",
+} as const;
+
+export type Status = typeof Statuses[keyof typeof Statuses];

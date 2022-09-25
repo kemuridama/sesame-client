@@ -2,7 +2,7 @@ import { URL } from "url";
 import { generateAesCmac } from "@kemuridama/aes-cmac";
 import { GetHistoryResponse, History } from "./types";
 import { Type } from "./constants";
-import { Command, CommandOption, Commands } from "./constants";
+import { Command, CommandOption } from "./constants";
 
 export const extractSecretKey = (qrCodePayload: string): string => {
   const url = new URL(qrCodePayload);
@@ -33,11 +33,11 @@ export const generateSign = (secretKey: string): Buffer => {
 export const parseCommand = (cmd: CommandOption): Command => {
   switch (cmd) {
     case "lock":
-      return Commands.LOCK;
+      return Command.LOCK;
     case "unlock":
-      return Commands.UNLOCK;
+      return Command.UNLOCK;
     case "toggle":
-      return Commands.TOGGLE;
+      return Command.TOGGLE;
   }
 };
 

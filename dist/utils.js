@@ -30,11 +30,11 @@ exports.generateSign = generateSign;
 const parseCommand = (cmd) => {
     switch (cmd) {
         case "lock":
-            return constants_1.Commands.LOCK;
+            return constants_1.Command.LOCK;
         case "unlock":
-            return constants_1.Commands.UNLOCK;
+            return constants_1.Command.UNLOCK;
         case "toggle":
-            return constants_1.Commands.TOGGLE;
+            return constants_1.Command.TOGGLE;
     }
 };
 exports.parseCommand = parseCommand;

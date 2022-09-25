@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Statuses = exports.Types = exports.CommandOptions = exports.Commands = void 0;
-exports.Commands = {
+exports.Status = exports.Type = exports.CommandOptions = exports.Command = void 0;
+exports.Command = {
     LOCK: 82,
     UNLOCK: 83,
     TOGGLE: 88,
@@ -11,7 +11,7 @@ exports.CommandOptions = [
     "unlock",
     "toggle",
 ];
-exports.Types = {
+exports.Type = {
     NONE: 0,
     BLE_LOCK: 1,
     BLE_UNLOCK: 2,
@@ -27,7 +27,7 @@ exports.Types = {
     DRIVE_FAILED: 12,
     BLE_ADV_PARAMETER_UPDATED: 13,
 };
-exports.Statuses = {
+exports.Status = {
     LOCKED: "locked",
     UNLOCKED: "unlocked",
     MOVED: "moved",
